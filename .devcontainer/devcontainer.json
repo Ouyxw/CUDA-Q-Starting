@@ -8,6 +8,7 @@
     "all"
   ],
   "remoteUser": "cudaq",
+  "postCreateCommand": "node --version >/dev/null 2>&1 || (sudo apt update && sudo apt install -y nodejs npm); npm list -g @openai/codex >/dev/null 2>&1 || sudo npm install -g @openai/codex",
   "customizations": {
     "vscode": {
       "settings": {
