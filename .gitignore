@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# C/C++ build outputs
+build/
+cmake-build-*/
+*.o
+*.so
+*.a
+*.out
+*.exe
+
+# CUDA-Q / local outputs
+*.log
+*.tmp
+results/
+outputs/
+
+# VS Code local state
+.vscode-server/
+.history/
+
+# OS/editor
+.DS_Store
+Thumbs.db

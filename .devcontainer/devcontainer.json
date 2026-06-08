@@ -1,0 +1,24 @@
+{
+  "name": "CUDA-Q Dev",
+  "image": "nvcr.io/nvidia/nightly/cuda-quantum:cu12-latest",
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "runArgs": [
+    "--gpus",
+    "all"
+  ],
+  "remoteUser": "cudaq",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.cwd": "/workspace",
+        "python.defaultInterpreterPath": "/usr/bin/python3"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-vscode.cpptools",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
